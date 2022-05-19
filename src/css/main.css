@@ -5,3 +5,12 @@
   align-items: center;
   justify-content: space-between;
 }
+
+.inpStyle {
+  background: #e8e8e8;
+  border: none;
+  width: 35px;
+  height: 30px;
+  text-align: center;
+  margin: 0;
+}

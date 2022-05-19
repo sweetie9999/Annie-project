@@ -8,7 +8,6 @@ import DialogTitle from "@mui/material/DialogTitle";
 import Dialog from "@mui/material/Dialog";
 import DialogContent from "@mui/material/DialogContent";
 import DialogContentText from "@mui/material/DialogContentText";
-import { ClassNames } from "@emotion/react";
 
 
 function Buy({inCart3}) {
@@ -89,15 +88,6 @@ function Buy({inCart3}) {
     filter: "opacity(0.5)",
   };
 
-  const inpStyle = {
-    backgroundColor: "#e8e8e8",
-    border: "none",
-    width: "35px",
-    height: "30px",
-    textAlign: "center",
-    margin: "0",
-  };
-
 
 //Num
 const [num, setNum] = useState(0);
@@ -115,7 +105,7 @@ const updateNum = (e) => {
             -
           </button>
           <input
-            style={inpStyle}
+            className="inpStyle"
             placeholder="0"
             value={num}
             onChange={updateNum}
